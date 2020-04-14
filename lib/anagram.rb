@@ -1,9 +1,9 @@
 def Anagram
   
-  attr_accessor :anagram 
+  attr_accessor :word
   
-  def initialize(anagram)
-    @anagram = anagram
+  def initialize(word)
+    @word = word
   end
   
   def match(array_of_words)
