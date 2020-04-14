@@ -6,9 +6,9 @@ def Anagram
     @anagram = anagram
   end
   
-  def match(word_array)
-    word_array.select do |word|
-      word.split("").sort == @word.split("").sort
+  def match(array_of_words)
+    array_of_words.select do |element|
+      (@word.split("").sort) == (element.split("").sort)
     end
   end
 end
